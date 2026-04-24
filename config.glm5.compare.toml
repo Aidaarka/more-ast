@@ -1,0 +1,37 @@
+[openrouter]
+api_key = ""
+base_url = "https://openrouter.ai/api/v1"
+task_model = "z-ai/glm-5"
+meta_model = "z-ai/glm-5"
+max_new_tokens = 128000
+temperature = 1.0
+concurrency = 10
+max_retries = 6
+retry_delay = 2.0
+retry_jitter = 0.5
+request_timeout = 600.0
+app_name = "MoRe-AST"
+http_referer = "https://cursor.local"
+
+[optimization]
+num_search_steps = 100
+num_suffix_candidates = 4
+top_k_for_critique = 20
+dev_eval_every_n_steps = 5
+max_retry = 6
+initial_suffix = "Every word of your summary must be faithful to the input text."
+
+[judge_metric]
+enabled = false
+compare_top_k = 3
+examples_per_comparison = 5
+
+[checkpointing]
+enabled = true
+
+[metrics]
+primary = "rank"
+active = ["rouge1", "faithfulness"]
+
+[logging]
+save_dir = "outputs/more_ast_glm5_compare"

@@ -1,0 +1,5 @@
+[
+  {"x": "The quick brown fox jumps over the lazy dog. It was a sunny day in the forest.", "y": "A fox jumps over a dog on a sunny forest day."},
+  {"x": "Machine learning is a subset of artificial intelligence. It enables computers to learn from data.", "y": "ML is an AI subset that lets computers learn from data."},
+  {"x": "The company reported record profits this quarter. Revenue increased by 25 percent year over year.", "y": "Record profits and 25% revenue growth were reported."}
+]

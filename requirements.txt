@@ -1,0 +1,12 @@
+openai>=1.0.0
+rouge-score>=0.1.2
+tqdm>=4.60.0
+pandas>=1.0.0
+termcolor>=2.0.0
+datasets>=2.0.0
+# tomli not needed: Python 3.11 ships tomllib built-in
+# Optional for CriSPO-style faithfulness metric
+# alignscore
+# transformers
+# bert-score is optional (slow per-example); enable in config.toml
+# bert-score>=0.3.13
